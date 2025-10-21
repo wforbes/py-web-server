@@ -202,13 +202,13 @@ users table:
 - [x] Add validation (email format, password strength, username requirements)
 
 #### Step 1.3: Password Utilities
-- [ ] Create `app/utils/password.py`
+- [x] Create `app/utils/password.py`
   - `hash_password()` function using argon2-cffi PasswordHasher
   - `verify_password()` function using PasswordHasher.verify()
   - Handle argon2 exceptions (InvalidHash, VerifyMismatchError)
 
 #### Step 1.4: User Repository (Data Access Layer)
-- [ ] Create `app/repositories/user_repository.py`
+- [x] Create `app/repositories/user_repository.py`
   - `create_user()` - insert new user into database using SQLAlchemy 2.0 patterns
   - `get_user_by_email()` - query user by email using select()
   - `get_user_by_username()` - query user by username using select()
@@ -216,18 +216,18 @@ users table:
   - Use SQLAlchemy 2.0 explicit select statements throughout
 
 #### Step 1.5: User Service (Business Logic Layer)
-- [ ] Create `app/services/user_service.py`
+- [x] Create `app/services/user_service.py`
   - `register_user()` - validate uniqueness, hash password, call repository
   - Handle duplicate username/email errors
 
 #### Step 1.6: Signup Endpoint (API Layer)
-- [ ] Create `app/routers/auth.py`
+- [x] Create `app/routers/auth.py`
   - POST `/auth/signup` endpoint
   - Accept UserCreate schema
   - Call user service
   - Return UserResponse with 201 status
   - Handle errors (duplicate user, validation errors)
-- [ ] Register router in `app/main.py`
+- [x] Register router in `app/main.py`
 
 #### Step 1.7: Test Signup Flow
 - [ ] Start server

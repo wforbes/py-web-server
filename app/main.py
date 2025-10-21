@@ -44,8 +44,8 @@ def health_check() -> dict[str, str]:
     return {"status": "healthy"}
 
 
-# Router registration will be added here as we build features
-# Example:
-# from app.routers import auth
-# app.include_router(auth.router, prefix="/auth", tags=["Authentication"])
+# Register routers
+from app.routers.auth import router as auth_router
+
+app.include_router(auth_router, prefix="/auth", tags=["Authentication"])
 
