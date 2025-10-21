@@ -196,10 +196,10 @@ users table:
 - [x] Run migration to create table in database
 
 #### Step 1.2: Pydantic Schemas (API Layer)
-- [ ] Create `app/schemas/user.py`
+- [x] Create `app/schemas/user.py`
   - `UserCreate` schema (input: username, email, password)
   - `UserResponse` schema (output: id, username, email, created_at - no password!)
-- [ ] Add validation (email format, password strength, username requirements)
+- [x] Add validation (email format, password strength, username requirements)
 
 #### Step 1.3: Password Utilities
 - [ ] Create `app/utils/password.py`
