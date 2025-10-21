@@ -11,7 +11,7 @@ from app.database import Base
 
 # Import all models here to ensure they're registered with SQLAlchemy
 # This is required for alembic autogenerate to detect model changes
-# from app.models.user import User  # Uncomment when user model is created
+from app.models.user import User  # noqa: F401
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.

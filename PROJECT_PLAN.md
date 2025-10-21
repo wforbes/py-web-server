@@ -165,22 +165,22 @@ users table:
 - [x] Use Pydantic v2 features for type-safe configuration management
 
 #### Step 0.3: Database Foundation
-- [ ] Create `app/database.py` - SQLAlchemy 2.0 engine, session factory, Base class
-- [ ] Use SQLAlchemy 2.0 modern API patterns (explicit select statements)
-- [ ] Set up database connection with connection string from config
-- [ ] Create session dependency for FastAPI using dependency injection
+- [x] Create `app/database.py` - SQLAlchemy 2.0 engine, session factory, Base class
+- [x] Use SQLAlchemy 2.0 modern API patterns (explicit select statements)
+- [x] Set up database connection with connection string from config
+- [x] Create session dependency for FastAPI using dependency injection
 
 #### Step 0.4: FastAPI Application Initialization
-- [ ] Create `app/main.py` - initialize FastAPI app
-- [ ] Configure CORS middleware with origins from environment
-- [ ] Set up OpenAPI documentation metadata
-- [ ] Create basic health check endpoint (GET `/health`)
-- [ ] Test that server starts and health endpoint responds
+- [x] Create `app/main.py` - initialize FastAPI app
+- [x] Configure CORS middleware with origins from environment
+- [x] Set up OpenAPI documentation metadata
+- [x] Create basic health check endpoint (GET `/health`)
+- [x] Test that server starts and health endpoint responds
 
 #### Step 0.5: Alembic Setup
-- [ ] Initialize Alembic (`alembic init alembic`)
-- [ ] Configure `alembic.ini` to use database URL from config
-- [ ] Configure `alembic/env.py` to import SQLAlchemy models
+- [x] Initialize Alembic (`alembic init alembic`)
+- [x] Configure `alembic.ini` to use database URL from config
+- [x] Configure `alembic/env.py` to import SQLAlchemy models
 
 ---
 
@@ -188,12 +188,12 @@ users table:
 **Goal**: Implement complete signup flow from request to database
 
 #### Step 1.1: User Model (Data Layer)
-- [ ] Create `app/models/user.py` - SQLAlchemy User model
+- [x] Create `app/models/user.py` - SQLAlchemy User model
   - Fields: id, username, email, password_hash, created_at, updated_at
   - Indexes on username and email
   - Unique constraints on username and email
-- [ ] Create Alembic migration for users table
-- [ ] Run migration to create table in database
+- [x] Create Alembic migration for users table
+- [x] Run migration to create table in database
 
 #### Step 1.2: Pydantic Schemas (API Layer)
 - [ ] Create `app/schemas/user.py`
