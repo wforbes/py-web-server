@@ -160,9 +160,9 @@ users table:
 - [x] Create basic `README.md` with setup instructions
 
 #### Step 0.2: Configuration Layer
-- [ ] Create `app/config.py` - load environment variables (DB connection string, JWT secret, CORS origins, token expiration)
-- [ ] Implement Settings class using pydantic-settings BaseSettings
-- [ ] Use Pydantic v2 features for type-safe configuration management
+- [x] Create `app/config.py` - load environment variables (DB connection string, JWT secret, CORS origins, token expiration)
+- [x] Implement Settings class using pydantic-settings BaseSettings
+- [x] Use Pydantic v2 features for type-safe configuration management
 
 #### Step 0.3: Database Foundation
 - [ ] Create `app/database.py` - SQLAlchemy 2.0 engine, session factory, Base class
