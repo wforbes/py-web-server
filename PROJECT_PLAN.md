@@ -153,11 +153,11 @@ users table:
 **Goal**: Set up the basic project structure, dependencies, and configuration
 
 #### Step 0.1: Initialize Project Structure
-- [ ] Create directory structure
-- [ ] Create `requirements.txt` with all dependencies
-- [ ] Create `.gitignore` for Python projects
-- [ ] Create `.env.example` with required environment variables
-- [ ] Create basic `README.md` with setup instructions
+- [x] Create directory structure
+- [x] Create `requirements.txt` with all dependencies
+- [x] Create `.gitignore` for Python projects
+- [x] Create `.env.example` with required environment variables
+- [x] Create basic `README.md` with setup instructions
 
 #### Step 0.2: Configuration Layer
 - [ ] Create `app/config.py` - load environment variables (DB connection string, JWT secret, CORS origins, token expiration)

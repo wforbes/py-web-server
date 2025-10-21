@@ -1,0 +1,22 @@
+# Web Framework
+fastapi==0.115.0
+uvicorn[standard]==0.32.0
+
+# Database
+sqlalchemy==2.0.35
+psycopg2-binary==2.9.10
+alembic==1.13.3
+
+# Authentication & Security
+pyjwt==2.9.0
+argon2-cffi==23.1.0
+cryptography==43.0.1
+
+# Configuration
+pydantic-settings==2.6.0
+python-dotenv==1.0.1
+
+# Validation
+pydantic[email]==2.9.2
+email-validator==2.2.0
+
